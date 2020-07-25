@@ -175,7 +175,7 @@ h1 {
 }
 
 .photo {
-    background-image: url("../img/Toronto.svg");
+    background-image: url("../img/toronto.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -303,7 +303,7 @@ a:visited {
     }
 
     .photo {
-        background-position: center center;
-        height: 140vmin;
+        background-image: url("../img/toronto-small.png");
+        background-position: center left;
     }
 }
