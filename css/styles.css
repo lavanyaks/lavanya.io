@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'Regular';
+    src: url('../fonts/Whitney-Light.eot');
+    src: url('../fonts/Whitney-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whitney-Light.woff2') format('woff2'),
+        url('../fonts/Whitney-Light.woff') format('woff'),
+        url('../fonts/Whitney-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url('../fonts/Whitney-Medium.eot');
+    src: url('../fonts/Whitney-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whitney-Medium.woff2') format('woff2'),
+        url('../fonts/../fonts/Whitney-Medium.woff') format('woff'),
+        url('../fonts/Whitney-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url('../fonts/Whitney-Bold.eot');
+    src: url('../fonts/Whitney-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whitney-Bold.woff2') format('woff2'),
+        url('../fonts/Whitney-Bold.woff') format('woff'),
+        url('../fonts/Whitney-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    margin: 0 10vmin;
+}
+
+::selection {
+    color: rgba(255, 255, 255, .99);
+    background: rgba(0, 0, 0, .99);
+}
+
+::-moz-selection {
+    color: rgba(255, 255, 255, .99);
+    background: rgba(0, 0, 0, .99);
+}
+
+.maxwidth {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+/* ----- intro ----- */
+.logo {
+    font-family: 'Bold';
+    font-size: 1.6em;
+    line-height: 80%;
+    color: #111111;
+    margin: 12vmin 0 18vmin 0;
+}
+
+h1 {
+    font-family: 'Bold';
+    font-size: 6em;
+    font-size: 7em;
+    line-height: 120%;
+    color: #111111;
+    margin-bottom: 18vmin;
+}
+
+.photo {
+    background-image: url("../img/Toronto.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vmin;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16vmin auto;
+}
+
+p.large {
+    font-family: 'Bold';
+    font-size: 3.1em;
+    color: #111111;
+    line-height: 140%;
+    margin-bottom: 6vmin;
+    overflow: hidden;
+}
+
+p {
+    font-family: 'Medium';
+    font-size: 1.6em;
+
+    color: #111111;
+    line-height: 160%;
+    margin-bottom: 4vmin;
+    overflow: hidden;
+}
+
+a.resume,
+a.resume:after,
+a.resume:visited {
+    font-family: 'Bold';
+    color: #111111;
+    cursor: pointer;
+}
+
+/* ----- contact ----- */
+
+.contact-list {
+    margin: 0vmin 0 20vmin 0;
+}
+
+.contact {
+    font-family: 'Medium';
+    font-size: 1.5em;
+    color: #111111;
+    line-height: 180%;
+}
+
+a,
+a:after,
+a:visited {
+    color: #111111;
+    cursor: pointer;
+}
+
+
+/* ----- animation ----- */
+.animate {
+    -webkit-animation: animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    -moz-animation: animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    animation: animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes animate {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(80px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.delaytitle {
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+}
+
+.delaycontent {
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    body {
+        margin: 0;
+    }
+
+    .maxwidth {
+        margin: 0 6%;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    p.large {
+        font-size: 2.4em;
+        margin-bottom: 12vmin;
+    }
+
+    p {
+        font-size: 1.4em;
+        margin-bottom: 8vmin;
+    }
+
+    .photo {
+        background-position: center center;
+        height: 140vmin;
+    }
+}
