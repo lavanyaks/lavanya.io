@@ -1,16 +1,4 @@
 @font-face {
-    font-family: 'Regular';
-    src: url('../fonts/Whitney-Light.eot');
-    src: url('../fonts/Whitney-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Whitney-Light.woff2') format('woff2'),
-        url('../fonts/Whitney-Light.woff') format('woff'),
-        url('../fonts/Whitney-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Medium';
     src: url('../fonts/Whitney-Medium.eot');
     src: url('../fonts/Whitney-Medium.eot?#iefix') format('embedded-opentype'),
